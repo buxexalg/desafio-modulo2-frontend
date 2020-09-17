@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #1D2226;
+    color: #FDFDFD;
+    margin: 0;
+} 
+
+.header, .footer {
+    background-color: #0F1C26;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-header {
+    display: flex;
+    align-items: center;
+    flex: 0 1 70vw;
+    justify-content: space-between;
+}
+
+.busca, .menu-desconto, .menu-favoritos, .perfil {
+    margin-left: 1em;
+}
+
+.busca {
+    margin: 0;
+    display: flex;
+}
+
+.busca form {
+    display: flex;
+    align-items: center;
+}
+
+.busca input {
+    background-color: #171B1E;
+    color: #FDFDFD;
+    border: none;
+    min-width: 500px;
+    min-height: 60px;
+    font-size: 1em;
+    padding: 1em;
+}
+
+#busca {
+    position: relative;
+    left: -10%;
+}
+
+.menu-favoritos, .menu-desconto {
+    display: flex;
+    align-items: center;
+}
+
+.menu-favoritos a, .menu-desconto a {
+    background-color:  #0F1C26;
+    text-decoration: none;
+    color: #FDFDFD;
+    margin-left: 0.7em;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil > img {
+    max-width: 56px;
+    flex-shrink: 0;
+    margin-left: 0.5em;
+}
+
+.conteudo {
+    display: flex;
+    margin: 1.5em auto;
+    justify-content: space-around;
+    max-width: 72vw;
+}
+
+.menu-filmes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 900px;
+}
+
+.header-filmes{
+    position: relative;
+    justify-content: space-between;
+    width: auto;
+}
+
+.header-filmes > img {
+    position: relative;
+}
+
+.cupom-filmes > h1, .cupom-filmes span, .finaliza-cupom-filmes > h2, .finaliza-cupom-filmes span  {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+    color: #0F0915;
+}
+
+.cupom-filmes > h1,  .finaliza-cupom-filmes > h2{
+    margin: 0;
+}
+
+.cupom-filmes > div, .finaliza-cupom-filmes > div {
+    display: flex;
+    align-items: center;
+}
+
+.cupom-filmes > div {
+    margin-left: -7px;
+}
+
+.cupom-filmes > div span {
+    margin-left: 0.5em;
+    padding-bottom: 8px;
+}
+
+.vl {
+    border-left: 1px solid #F294D8;
+    opacity: 0.2;
+    height: 46px;
+    width: 0px;
+    position: absolute;
+    left: 379px;
+    bottom: 50%;
+    margin-bottom: -23px;
+}
+
+.finaliza-cupom-filmes > div {
+    margin-top: 11px;
+}
+
+.finaliza-cupom-filmes > div span {
+    margin-left: 1em;
+}
+
+.finaliza-cupom-filmes, .cupom-filmes {
+    position: absolute;
+}
+
+.cupom-filmes {
+    left: 0;
+    bottom: 50%;
+    margin-bottom: -45px;
+    margin-left: 24px;
+}
+
+.finaliza-cupom-filmes {
+    left: 440px;
+    bottom: 50%;
+    margin-bottom: -33px;
+}
+
+#dinheiro {
+    position: absolute;
+    right: 0px;
+    top: -42px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes button {
+    background-color:#1D2226;
+    color:#E5E5E5;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    padding: 0.5em;
+    opacity: 0.3;
+    flex: 0 1 170px;
+}
+
+.lista-filmes > .botoes > .ativo {
+    opacity: 1;
+    background-color: rgba(225, 131, 200, 0.2) ;
+    color: #E183C8;
+    border: 2px solid #E183C8;
+}
+
+.sacola {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+.header-sacola {
+    background-color: #A785ED;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5em;
+}
+
+.itens-sacola, .cupom-sacola {
+    padding: 1rem 1.5rem;
+}
+
+.itens-sacola {
+    text-align: center;
+}
+
+.itens-sacola p {
+    margin: 0px;
+}
+
+.itens-sacola p:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.itens-sacola p:nth-child(2) {
+    font-size: 1em;
+    margin-top: 0.5em;
+    
+}
+
+.cupom-sacola {
+    margin-right: -1.3em;
+}
+
+.cupom-sacola label {
+    font-size: 0.7em;
+}
+
+.cupom-sacola form input {
+    background-color: #0B1217;
+    color: #FDFDFD;
+    border: none;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.cupom-sacola form img {
+    position: relative;
+    left: -10%;
+}
+
+.cupom-sacola form {
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer > div {
+    display: flex;
+    align-items: center;
+}
