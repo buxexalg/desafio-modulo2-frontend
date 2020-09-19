@@ -50,7 +50,7 @@
                     <h2>FINALIZA EM:</h2>
                     <div>
                         <img src="../imagens/tempo-restante.png">
-                        <span>00:05:00</span>
+                        <span id="tempo">00:05:00</span>
                     </div>
                 </div>
                 <img id="dinheiro" src="../imagens/dinheiro-banner.png">
@@ -61,7 +61,7 @@
                 </h2>
                 <div class="lista-card-filmes">
                     <ul>
-
+                        
                     </ul>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <button id="botaoSciFi">Ficção científica</button>
                     <button id="botaoTerror" >Terror</button>
                 </div>
-                <div class="lista-card-filmes">
+                <div class="lista-card-todos-filmes">
                     <ul>
 
                     </ul>
@@ -89,9 +89,17 @@
                 <span>Sacola</span>
             </div>
             <div class="itens-sacola">
-                <p>Sua sacola está vazia</p>
-                <p>Adicione filmes agora</p>
-                <img src="../imagens/icone-carrinho.png">
+                <div class="sacola-vazia">
+                    <p>Sua sacola está vazia</p>
+                    <p>Adicione filmes agora</p>
+                    <img src="../imagens/icone-carrinho.png">
+                </div>
+
+                <div class="filmes-sacola" hidden>
+                    <ul>
+                        
+                    </ul>
+                </div>
             </div>
             <div class="cupom-sacola">
                 <label>Insira seu cupom</label>
@@ -100,6 +108,7 @@
                         <img src="../imagens/cupom.png">
                     </form>
             </div>
+            
         </div>
     </div>
     <div class="footer">

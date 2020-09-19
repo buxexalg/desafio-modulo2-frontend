@@ -79,6 +79,7 @@ body {
     margin: 1.5em auto;
     justify-content: space-around;
     max-width: 72vw;
+    align-items: flex-start;
 }
 
 .menu-filmes {
@@ -91,6 +92,7 @@ body {
     position: relative;
     justify-content: space-between;
     width: auto;
+    cursor: pointer;
 }
 
 .header-filmes > img {
@@ -166,6 +168,7 @@ body {
 .botoes {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1.5em;
 }
 
 .botoes button {
@@ -176,6 +179,12 @@ body {
     padding: 0.5em;
     opacity: 0.3;
     flex: 0 1 170px;
+}
+
+.botoes button:hover {
+    border: 2px solid #E183C8;
+    color: #E183C8;
+    opacity: 1;
 }
 
 .lista-filmes > .botoes > .ativo {
@@ -190,7 +199,8 @@ body {
     flex-direction: column;
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0.2);
-    
+    position: sticky;
+    top: 24px
 }
 
 .header-sacola {
@@ -207,20 +217,28 @@ body {
     padding: 1rem 1.5rem;
 }
 
+.cupom-sacola {
+    padding-top: 0;
+}
+
 .itens-sacola {
+    padding-bottom: 0;
+}
+
+.itens-sacola, .sacola-vazia {
     text-align: center;
 }
 
-.itens-sacola p {
+.itens-sacola p, .sacola-vazia p {
     margin: 0px;
 }
 
-.itens-sacola p:first-child {
+.sacola-vazia p:first-child {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.itens-sacola p:nth-child(2) {
+.sacola-vazia p:nth-child(2) {
     font-size: 1em;
     margin-top: 0.5em;
     
@@ -256,4 +274,150 @@ body {
 .footer > div {
     display: flex;
     align-items: center;
+}
+
+.card {
+    max-width: 170px;
+    position: relative;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0;
+}
+
+.lista-card-todos-filmes li{
+    margin-bottom: 1.5em;
+}
+
+.lista-card-filmes ul, .lista-card-todos-filmes ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.texto {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    justify-content: flex-end;
+    padding: 0.5em;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nota {
+    color: #FBCD6E;
+    display: flex;
+    align-items: center;
+}
+
+.nota > img {
+    margin-right: 0.3em;
+}
+
+.texto button {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A785ED;
+    color: #EEE5FF;
+    border: none;
+    padding-top: 4px; 
+    padding-bottom: 4px;
+    margin-top: 8px;
+}
+
+.texto button:hover {
+    background: linear-gradient(0deg, rgba(46, 46, 46, 0.45), rgba(46, 46, 46, 0.45)), #A785ED;
+}
+
+.texto > img {
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.dados-filme {
+    display: flex;
+    align-items: center;
+    flex-basis: 70%;
+}
+
+.dados-filme img {
+    max-width: 25%;
+    max-height: 100%;
+}
+
+.filmes-sacola li {
+    margin-bottom: 0.5em;
+}
+
+.informacoes-filme-sacola {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-left: 1em;
+}
+
+.informacoes-filme-sacola {
+    font-size: 1em;
+    text-align: start;
+}
+
+.comandos-sacola {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comandos-sacola img {
+    cursor: pointer;
+}
+
+.comandos-sacola span {
+    margin: 0 16px;
+}
+
+.botao-confirma button {
+    background: #E25EBF;
+    color: #FDFDFD;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border: none;
+}
+
+.botao-confirma {
+    display: flex;
+    justify-content: center;
+    padding: 1em 1.5em;
+    padding-right: 1.3em;
+    padding-top: 0;
+    flex-direction: column;
 }
