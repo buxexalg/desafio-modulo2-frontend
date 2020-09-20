@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #1D2226;
+    color: #FDFDFD;
+    margin: 0;
+} 
+
+.header, .footer {
+    background-color: #0F1C26;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-header {
+    display: flex;
+    align-items: center;
+    flex: 0 1 70vw;
+    justify-content: space-between;
+}
+
+.busca, .menu-desconto, .menu-favoritos, .perfil {
+    margin-left: 1em;
+}
+
+.busca {
+    margin: 0;
+    display: flex;
+}
+
+.busca form {
+    display: flex;
+    align-items: center;
+}
+
+.busca input {
+    background-color: #171B1E;
+    color: #FDFDFD;
+    border: none;
+    min-width: 500px;
+    min-height: 60px;
+    font-size: 1em;
+    padding: 1em;
+}
+
+#busca {
+    position: relative;
+    left: -10%;
+}
+
+.menu-favoritos, .menu-desconto {
+    display: flex;
+    align-items: center;
+}
+
+.menu-favoritos a, .menu-desconto a {
+    background-color:  #0F1C26;
+    text-decoration: none;
+    color: #FDFDFD;
+    margin-left: 0.7em;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil > img {
+    max-width: 56px;
+    flex-shrink: 0;
+    margin-left: 0.5em;
+}
+
+.conteudo {
+    display: flex;
+    margin: 1.5em auto;
+    max-width: 85vw;
+    min-height: 80vh;
+    background-image: url("../imagens/musico-obrigado.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-obrigado {
+    background: rgba(0, 0, 0, 0.2);
+    min-width: 800px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-obrigado span {
+    margin-bottom: 3em;
+}
+
+.botao-confirma {
+    background: #E25EBF;
+    color: #FDFDFD;
+    padding: 1em;
+    border: none;
+    font-size: 1.1em;
+    width: 60%;
+}
+
+.botao-confirma:hover {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.45), rgba(225, 123, 123, 0.45)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+}
+
+.botao-confirma:active {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.6), rgba(225, 123, 123, 0.6)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.5);
+}
+
+.footer > div {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
