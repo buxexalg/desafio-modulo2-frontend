@@ -153,7 +153,6 @@ const sacolaVazia = document.querySelector(".sacola-vazia");
 const filmesSacola = document.querySelector(".filmes-sacola")
 const listaFilmesSacola = filmesSacola.querySelector("ul");
 
-
 const tempo = document.querySelector("#tempo");
 const tempoDividido = document.querySelector("#tempo").innerText.split(":");
 
@@ -398,6 +397,9 @@ const adicionaBotaoCompra = () => {
     </button>`
 
     sacola.append(botao);
+
+    const botaoConfirma = document.querySelector(".botao-confirma button");
+    botaoConfirma.addEventListener("click", () => confirmarDados());
 }
 
 const valorSacola = () => {
@@ -417,4 +419,25 @@ const valorSacola = () => {
     document.querySelector(".botao-confirma span").innerText = `R$ ${valor.toFixed(2)}`;
 }
 
+const confirmarDados = () => {
 
+    const a = document.querySelectorAll(".itens-sacola li");
+    const listaSacola = []
+    a.forEach((item) => {
+        const sacolaFinalizada = {
+            poster : item.querySelector(".dados-filme img").src,
+            nome : item.querySelector(".informacoes-filme-sacola span:first-child").innerText,
+            preco : item.querySelector(".informacoes-filme-sacola span:last-child").innerText,
+            quantidade : item.querySelector(".comandos-sacola span").innerText,
+            cupom : (inputCupom.value === 'HTMLNAOELINGUAGEM') ? true : false
+        }
+
+        listaSacola.push(sacolaFinalizada);
+    })
+
+    const sacolaString = JSON.stringify(listaSacola);
+
+    localStorage.setItem('sacola', sacolaString);
+
+    location.href = '../2 - pagamento/pagamento-ecommerce.html';
+}
