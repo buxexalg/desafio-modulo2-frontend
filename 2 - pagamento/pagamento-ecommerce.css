@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #1D2226;
+    color: #FDFDFD;
+    margin: 0;
+} 
+
+.header, .footer {
+    background-color: #0F1C26;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-header {
+    display: flex;
+    align-items: center;
+    flex: 0 1 70vw;
+    justify-content: space-between;
+}
+
+.busca, .menu-desconto, .menu-favoritos, .perfil {
+    margin-left: 1em;
+}
+
+.busca {
+    margin: 0;
+    display: flex;
+}
+
+.busca form {
+    display: flex;
+    align-items: center;
+}
+
+.busca input {
+    background-color: #171B1E;
+    color: #FDFDFD;
+    border: none;
+    min-width: 500px;
+    min-height: 60px;
+    font-size: 1em;
+    padding: 1em;
+}
+
+#busca {
+    position: relative;
+    left: -10%;
+}
+
+.menu-favoritos, .menu-desconto {
+    display: flex;
+    align-items: center;
+}
+
+.menu-favoritos a, .menu-desconto a {
+    background-color:  #0F1C26;
+    text-decoration: none;
+    color: #FDFDFD;
+    margin-left: 0.7em;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil > img {
+    max-width: 56px;
+    flex-shrink: 0;
+    margin-left: 0.5em;
+}
+
+.conteudo {
+    display: flex;
+    margin: 1.5em auto;
+    justify-content: space-evenly;
+    max-width: 85vw;
+    align-items: flex-start;
+    background-image: url("../imagens/icone-carrinho.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.formularios {
+    flex-basis: 750px;
+    margin-left: 100px;
+}
+
+.formularios form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formularios div {
+    background: #171B1E;
+    display: flex;
+    flex-direction: column;
+}
+
+.formularios input {
+    background-color: #0B1217;
+    color: #FDFDFD;
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    min-width: 330px;
+    border: 1px solid  #0B1217;
+}
+
+.formularios input:hover {
+    border: 1px solid #8C8C8C;
+}
+
+.formularios input:active {
+    border: 1px solid #FDFDFD;
+}
+
+.formularios input:invalid {
+    border: 1px solid #EB5757;
+}
+
+.formularios input:valid {
+    border: 1px solid  #0B1217;
+}
+
+
+.email, .pais, .bairro, .nome-cartao, .cvv {
+    margin-left: 1.5em;
+}
+
+.telefone, .cidade, .bairro, .numero, .data-expiracao, .cvv {
+    margin-top: 2em;
+}
+
+.formularios label {
+    font-size: 0.8em;
+}
+
+.informacoes-iniciais, .informacoes-endereco, .informacoes-pagamento {
+    padding: 2em;
+    margin-bottom: 1em;
+    padding-top: 0;
+}
+
+.sacola {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 24px;
+}
+
+.header-sacola {
+    background-color: #A785ED;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5em;
+}
+
+.itens-sacola, .cupom-sacola {
+    padding: 1rem 1.5rem;
+}
+
+.cupom-sacola {
+    padding-top: 0;
+}
+
+.itens-sacola {
+    padding-bottom: 0;
+}
+
+.itens-sacola, .sacola-vazia {
+    text-align: center;
+}
+
+.itens-sacola p, .sacola-vazia p {
+    margin: 0px;
+}
+
+.sacola-vazia p:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.sacola-vazia p:nth-child(2) {
+    font-size: 1em;
+    margin-top: 0.5em;
+    
+}
+
+.cupom-sacola {
+    margin-right: -1.3em;
+}
+
+.cupom-sacola label {
+    font-size: 0.7em;
+}
+
+.cupom-sacola form input {
+    background-color: #0B1217;
+    color: #FDFDFD;
+    border: none;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.cupom-sacola form img {
+    position: relative;
+    left: -10%;
+}
+
+.cupom-sacola form {
+    display: flex;
+    align-items: center;
+    
+}
+
+li{
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.dados-filme {
+    display: flex;
+    align-items: center;
+    flex-basis: 70%;
+}
+
+.dados-filme img {
+    max-width: 25%;
+    max-height: 100%;
+}
+
+.filmes-sacola li {
+    margin-bottom: 0.5em;
+}
+
+.informacoes-filme-sacola {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-left: 1em;
+}
+
+.informacoes-filme-sacola {
+    font-size: 1em;
+    text-align: start;
+}
+
+.comandos-sacola {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comandos-sacola img {
+    cursor: pointer;
+}
+
+.comandos-sacola span {
+    margin: 0 16px;
+}
+
+.botao-confirma button {
+    background: #E25EBF;
+    color: #FDFDFD;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border: none;
+}
+
+.botao-confirma {
+    display: flex;
+    justify-content: center;
+    padding: 1em 1.5em;
+    padding-right: 1.3em;
+    padding-top: 0;
+    flex-direction: column;
+}
+
+.botao-confirma button:hover {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.45), rgba(225, 123, 123, 0.45)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.16);
+}
+
+.botao-confirma button:active {
+    background: linear-gradient(0deg, rgba(225, 123, 123, 0.6), rgba(225, 123, 123, 0.6)), #FFB6EB;
+    box-shadow: 0px 16px 24px -12px rgba(226, 94, 191, 0.5);
+}
+
+.botao-confirma button:disabled {
+    background: linear-gradient(0deg, #898989, #898989);
+}
+
+.footer > div {
+    display: flex;
+    align-items: center;
+}
+
